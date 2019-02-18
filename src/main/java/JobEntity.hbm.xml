@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.jt.pachong.Job" table="hangzhou">
+        <id name="id">
+            <column name="id" sql-type="bigint(20)"/>
+            <generator class="native"></generator>
+        </id>
+        <property name="title">
+            <column name="title" sql-type="varchar(80)" length="80" />
+        </property>
+         <property name="company">
+            <column name="company" sql-type="varchar(40)" length="40" />
+        </property>
+         <property name="minSalary">
+            <column name="min_salary" sql-type="int(11)" length="11" />
+        </property>
+         <property name="maxSalary">
+            <column name=" max_salary" sql-type="int(11)" length="11" />
+        </property>
+         <property name="workLocation">
+            <column name="work_localtion" sql-type="varchar(20)" length="20" />
+        </property>
+        <property name="education">
+            <column name="education" sql-type="varchar(20)" length="20" />
+        </property>
+        <property name="welfare">
+            <column name="welfare" sql-type="varchar(100)" length="100" />
+        </property>
+         <property name="created">
+            <column name="created" sql-type="datetime"  />
+        </property>
+        <property name="url">
+            <column name="url" sql-type="varchar(200)" length="200" />
+        </property>
+        <property name="info">
+            <column name="info" sql-type="varchar(3000)" length="3000" />
+        </property>
+        <property name="experience">
+            <column name="experience" sql-type="varchar(20)" length="20" />
+        </property>
+        
+        
+
+    </class>
+</hibernate-mapping>
